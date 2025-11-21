@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Blog Yazısı</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a href="index.html" class="back">← Anasayfa</a>
+<main id="content">Yükleniyor...</main>
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://erlpblog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+<script>
+async function loadPost(){
+const p=new URLSearchParams(location.search);
+const f=p.get("post");
+const r=await fetch("posts/"+f);
+const t=await r.text();
+const c=new showdown.Converter();
+document.getElementById("content").innerHTML=c.makeHtml(t);
+}
+loadPost();
+</script>
+
+</body>
+</html>

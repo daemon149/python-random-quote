@@ -1,0 +1,10 @@
+body{margin:0;font-family:Arial;background:#111;color:#eee;}
+header{background:#222;padding:20px;text-align:center;}
+h1{margin:0;color:#49b6ff;}
+#posts{padding:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;}
+.card{background:#1a1a1a;padding:15px;border-radius:10px;transition:.2s;}
+.card:hover{transform:scale(1.04);}
+.thumb{width:100%;border-radius:10px;}
+.card h2{color:#4fc2ff;}
+.back{display:inline-block;margin:20px;color:#4fc2ff;text-decoration:none;}
+#content img{max-width:100%;border-radius:10px;}

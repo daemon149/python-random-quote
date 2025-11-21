@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: daemon149/erlpblog
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Yazılar"
+    folder: "posts"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Başlık", name: "title", widget: "string" }
+      - { label: "Kapak Görseli", name: "image", widget: "image", required: false }
+      - { label: "Kategori", name: "category", widget: "select", options: ["Genel","Oyun","Günlük","Kodlama"] }
+      - { label: "Tarih", name: "date", widget: "datetime" }
+      - { label: "İçerik", name: "body", widget: "markdown" }
