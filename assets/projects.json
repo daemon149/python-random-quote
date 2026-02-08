@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Blue Orbit",
+    "category": "Landing Page",
+    "description": "SaaS girişimi için dönüşüm odaklı lansman sayfası.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "title": "Aqua Commerce",
+    "category": "E-ticaret",
+    "description": "Ürün keşfi ve hızlı ödeme akışına sahip modern mağaza tasarımı.",
+    "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "title": "Glow Studio",
+    "category": "Portföy",
+    "description": "Kreatif ajans için hikaye odaklı portföy deneyimi.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+  },
+  {
+    "title": "Wave Analytics",
+    "category": "Dashboard",
+    "description": "Veri görselleştirme ve hızlı karar alma için analitik panel.",
+    "image": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=900&q=80"
+  }
+]

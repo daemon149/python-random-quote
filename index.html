@@ -1,20 +1,157 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Blog</title>
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portföy | ERLP</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="brand">
+        <span class="brand-mark">ERLP</span>
+        <span class="brand-sub">Kişisel Portföy</span>
+      </div>
+      <nav class="nav">
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Çalışmalar</a>
+        <a href="#skills">Yetenekler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+      <a class="cta" href="#contact">Projeni Konuşalım</a>
+    </div>
+  </header>
 
-<header>
-<h1>ERLP Blog</h1>
-</header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Dijital dünyada dikkat çeken işler</p>
+          <h1>Mavi tonlarda parlayan, güçlü ve güncel bir portföy.</h1>
+          <p class="hero-text">
+            Merhaba! Ben ERLP. Markaları dijitalde öne çıkaran web deneyimleri tasarlıyor ve geliştiriyorum.
+            Buradan yaptığım çalışmaları düzenli olarak yükleyip güncelliyorum.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#projects">Çalışmaları Gör</a>
+            <a class="ghost" href="#contact">Hızlı Teklif Al</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span>15+</span>
+              <p>Yayınlanan proje</p>
+            </div>
+            <div>
+              <span>8</span>
+              <p>Aktif marka iş birliği</p>
+            </div>
+            <div>
+              <span>5</span>
+              <p>Yıl deneyim</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-title">En yeni çalışma</p>
+          <h3>Nordic Wave</h3>
+          <p>Kurumsal lansman sayfası · UI/UX + Frontend</p>
+          <div class="hero-tags">
+            <span>Figma</span>
+            <span>HTML/CSS</span>
+            <span>Motion</span>
+          </div>
+          <a class="card-link" href="#projects">Projeyi İncele →</a>
+        </div>
+      </div>
+    </section>
 
-<main id="posts"></main>
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>Hakkımda</h2>
+          <p>
+            Tutarlı renk paletleri, hızlı yüklenen arayüzler ve kullanıcı odaklı akışlar benim işimin temeli.
+            Portföyüme yeni işler ekledikçe bu sayfa otomatik güncellenir. Böylece güncel projelerimi her zaman
+            tek bir yerde görebilirsiniz.
+          </p>
+          <p>
+            Dijital ürününüzü öne çıkarmak için strateji, tasarım ve geliştirmeyi birlikte yürütüyorum.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3>Odak Noktaları</h3>
+          <ul>
+            <li>Marka kimliğiyle uyumlu web arayüzleri</li>
+            <li>Öne çıkan dönüşüm odaklı landing page'ler</li>
+            <li>Yeni projeler için hızlı güncelleme süreci</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-<script src="assets/script.js"></script>
+    <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Çalışmalar</h2>
+            <p>Her bir projeyi en güncel haliyle buraya ekliyorum. Yeni bir iş yüklendiğinde otomatik görünür.</p>
+          </div>
+          <a class="ghost" href="#contact">Birlikte Çalışalım</a>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+      </div>
+    </section>
 
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Yetenekler</h2>
+        <div class="skills-grid">
+          <div class="skill">UI/UX Tasarım</div>
+          <div class="skill">Webflow & HTML/CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Branding</div>
+          <div class="skill">E-ticaret</div>
+          <div class="skill">Landing Page</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>İletişim</h2>
+          <p>Yeni projeniz için hemen iletişime geçin. 24 saat içinde geri dönüş sağlıyorum.</p>
+          <div class="contact-details">
+            <p><strong>E-posta:</strong> merhaba@erlp.dev</p>
+            <p><strong>Telefon:</strong> +90 555 555 55 55</p>
+            <p><strong>Konum:</strong> İstanbul / Türkiye</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Ad Soyad">
+          <input type="email" placeholder="E-posta">
+          <textarea rows="4" placeholder="Projenizi anlatın"></textarea>
+          <button type="button">Gönder</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2024 ERLP Portföy. Tüm hakları saklıdır.</p>
+      <div class="socials">
+        <a href="#">Behance</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Dribbble</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
